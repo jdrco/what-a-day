@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Home.swift
 //  whataday
 //
 //  Created by Jared Drueco on 2023-12-23.
@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Home: View {
     var body: some View {
-        Home()
+        ZStack {
+            Slider()
+        }
     }
+    
 }
 
 #Preview {
-    ContentView()
+    Home()
 }
