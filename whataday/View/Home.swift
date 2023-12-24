@@ -10,10 +10,11 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         ZStack {
+            Clock()
             Slider()
+            Slider(startAngle: 90, endAngle: 180, startRange: 0.25, endRange: 0.5, isActive: false, color: .red)
         }
     }
-    
 }
 
 #Preview {
