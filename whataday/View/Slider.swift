@@ -46,7 +46,7 @@ struct Slider: View {
                 if isActive {
                     Dragger(isStart: true, angle: $startAngle)
                         .foregroundColor(.black)
-                        .offset(x: width / 2 + 17)
+                        .offset(x: width / 2 + 15)
                         .rotationEffect(.init(degrees: startAngle))
                         .gesture(
                             DragGesture()
@@ -58,7 +58,7 @@ struct Slider: View {
                     
                     Dragger(isStart: false, angle: $endAngle)
                         .foregroundColor(.black)
-                        .offset(x: width / 2 + 17)
+                        .offset(x: width / 2 + 15)
                         .rotationEffect(.init(degrees: endAngle))
                         .gesture(
                             DragGesture()
@@ -79,14 +79,16 @@ struct Slider: View {
         var angle = radians * 180 / .pi
         if angle < 0 { angle = 360 + angle }
         
-        let range = angle / 360
+        // Calculate the closest tick mark angle
+        let tickAngle = 360 / 96.0
+        let closestTick = round(angle / tickAngle) * tickAngle
         
         if isStartSlider {
-            self.startAngle = angle
-            self.startRange = range
+            self.startAngle = closestTick
+            self.startRange = closestTick / 360
         } else {
-            self.endAngle = angle
-            self.endRange = range
+            self.endAngle = closestTick
+            self.endRange = closestTick / 360
         }
     }
 }

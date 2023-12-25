@@ -28,7 +28,7 @@ struct Dragger: View {
             .rotationEffect(.init(degrees: -angle))
             .padding(.bottom, 2)
         }
-        .frame(width: 65, height: 2)
+        .frame(width: 60, height: 2)
         .foregroundColor(.black)
     }
 }
