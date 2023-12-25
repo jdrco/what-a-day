@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ArcHandlerView: View {
-    @State var isStart: Bool
+    var isStart: Bool
+    var diameter: CGFloat
+    var viewModel: ArcViewModel
     @Binding var angle: Double
+
     var body: some View {
         HStack(spacing: 0) {
             Line()
@@ -30,10 +33,19 @@ struct ArcHandlerView: View {
         }
         .frame(width: 60, height: 2)
         .foregroundColor(.black)
+        .offset(x: diameter / 2 + 15)
+        .rotationEffect(.init(degrees: angle))
+        .gesture(
+            DragGesture()
+                .onChanged({ value in
+                    viewModel.onDrag(value: value, isStartHandler: isStart)
+                })
+        )
+        .rotationEffect(.init(degrees: -90))
     }
 }
 
-struct Line:Shape{
+struct Line: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
         path.move(to: CGPoint(x: 0, y: 0))
@@ -45,9 +57,9 @@ struct Line:Shape{
 #Preview {
     VStack {
         Spacer()
-        ArcHandlerView(isStart: true, angle: .constant(90))
+        ArcHandlerView(isStart: true, diameter: 0, viewModel: ArcViewModel(), angle: .constant(90))
         Spacer()
-        ArcHandlerView(isStart: false, angle: .constant(90))
+        ArcHandlerView(isStart: false, diameter: 0, viewModel: ArcViewModel(), angle: .constant(90))
         Spacer()
     }
 }

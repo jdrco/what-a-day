@@ -1,5 +1,5 @@
 //
-//  Clock.swift
+//  ClockView.swift
 //  whataday
 //
 //  Created by Jared Drueco on 2023-12-23.

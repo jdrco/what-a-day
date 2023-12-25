@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E11323212B37BE2000AFB9E8 /* Dragger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11323202B37BE2000AFB9E8 /* Dragger.swift */; };
+		E11323212B37BE2000AFB9E8 /* ArcHandlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11323202B37BE2000AFB9E8 /* ArcHandlerView.swift */; };
 		E14D42912B376FFF0015BA2F /* whatadayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42902B376FFF0015BA2F /* whatadayApp.swift */; };
-		E14D42932B376FFF0015BA2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42922B376FFF0015BA2F /* ContentView.swift */; };
 		E14D42952B3770020015BA2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E14D42942B3770020015BA2F /* Assets.xcassets */; };
 		E14D42982B3770020015BA2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E14D42972B3770020015BA2F /* Preview Assets.xcassets */; };
 		E14D42A22B3770030015BA2F /* whatadayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42A12B3770030015BA2F /* whatadayTests.swift */; };
 		E14D42AC2B3770030015BA2F /* whatadayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42AB2B3770030015BA2F /* whatadayUITests.swift */; };
 		E14D42AE2B3770030015BA2F /* whatadayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42AD2B3770030015BA2F /* whatadayUITestsLaunchTests.swift */; };
-		E14D42BC2B3771790015BA2F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42BB2B3771790015BA2F /* Home.swift */; };
-		E14D42BE2B3772F50015BA2F /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42BD2B3772F50015BA2F /* Slider.swift */; };
-		E14D42C02B3795C20015BA2F /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42BF2B3795C20015BA2F /* Clock.swift */; };
+		E14D42BE2B3772F50015BA2F /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42BD2B3772F50015BA2F /* ArcView.swift */; };
+		E14D42C02B3795C20015BA2F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42BF2B3795C20015BA2F /* ClockView.swift */; };
+		E1A966CF2B39333E00544F68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A966CE2B39333E00544F68 /* ContentView.swift */; };
+		E1A966D12B39401D00544F68 /* ArcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A966D02B39401D00544F68 /* ArcModel.swift */; };
+		E1A966D42B39403F00544F68 /* ArcViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A966D32B39403F00544F68 /* ArcViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E11323202B37BE2000AFB9E8 /* Dragger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragger.swift; sourceTree = "<group>"; };
+		E11323202B37BE2000AFB9E8 /* ArcHandlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcHandlerView.swift; sourceTree = "<group>"; };
 		E14D428D2B376FFF0015BA2F /* whataday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whataday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14D42902B376FFF0015BA2F /* whatadayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatadayApp.swift; sourceTree = "<group>"; };
-		E14D42922B376FFF0015BA2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E14D42942B3770020015BA2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E14D42972B3770020015BA2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E14D429D2B3770030015BA2F /* whatadayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatadayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,9 +49,11 @@
 		E14D42A72B3770030015BA2F /* whatadayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatadayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14D42AB2B3770030015BA2F /* whatadayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatadayUITests.swift; sourceTree = "<group>"; };
 		E14D42AD2B3770030015BA2F /* whatadayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatadayUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E14D42BB2B3771790015BA2F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		E14D42BD2B3772F50015BA2F /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
-		E14D42BF2B3795C20015BA2F /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		E14D42BD2B3772F50015BA2F /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		E14D42BF2B3795C20015BA2F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		E1A966CE2B39333E00544F68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1A966D02B39401D00544F68 /* ArcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcModel.swift; sourceTree = "<group>"; };
+		E1A966D32B39403F00544F68 /* ArcViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +104,11 @@
 		E14D428F2B376FFF0015BA2F /* whataday */ = {
 			isa = PBXGroup;
 			children = (
+				E1A966D22B39402C00544F68 /* ViewModel */,
+				E1A966CD2B392F5B00544F68 /* Model */,
 				E14D42BA2B3771320015BA2F /* View */,
 				E14D42902B376FFF0015BA2F /* whatadayApp.swift */,
-				E14D42922B376FFF0015BA2F /* ContentView.swift */,
+				E1A966CE2B39333E00544F68 /* ContentView.swift */,
 				E14D42942B3770020015BA2F /* Assets.xcassets */,
 				E14D42962B3770020015BA2F /* Preview Content */,
 			);
@@ -139,12 +143,27 @@
 		E14D42BA2B3771320015BA2F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E14D42BB2B3771790015BA2F /* Home.swift */,
-				E14D42BD2B3772F50015BA2F /* Slider.swift */,
-				E14D42BF2B3795C20015BA2F /* Clock.swift */,
-				E11323202B37BE2000AFB9E8 /* Dragger.swift */,
+				E11323202B37BE2000AFB9E8 /* ArcHandlerView.swift */,
+				E14D42BD2B3772F50015BA2F /* ArcView.swift */,
+				E14D42BF2B3795C20015BA2F /* ClockView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E1A966CD2B392F5B00544F68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1A966D02B39401D00544F68 /* ArcModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1A966D22B39402C00544F68 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1A966D32B39403F00544F68 /* ArcViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,12 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E14D42932B376FFF0015BA2F /* ContentView.swift in Sources */,
-				E14D42BC2B3771790015BA2F /* Home.swift in Sources */,
-				E14D42BE2B3772F50015BA2F /* Slider.swift in Sources */,
+				E14D42BE2B3772F50015BA2F /* ArcView.swift in Sources */,
+				E1A966D42B39403F00544F68 /* ArcViewModel.swift in Sources */,
+				E1A966CF2B39333E00544F68 /* ContentView.swift in Sources */,
 				E14D42912B376FFF0015BA2F /* whatadayApp.swift in Sources */,
-				E11323212B37BE2000AFB9E8 /* Dragger.swift in Sources */,
-				E14D42C02B3795C20015BA2F /* Clock.swift in Sources */,
+				E11323212B37BE2000AFB9E8 /* ArcHandlerView.swift in Sources */,
+				E1A966D12B39401D00544F68 /* ArcModel.swift in Sources */,
+				E14D42C02B3795C20015BA2F /* ClockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

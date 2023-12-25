@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct ArcModel {
+    var startAngle: Double
+    var endAngle: Double
+    var startRange: CGFloat
+    var endRange: CGFloat
+    var isActive: Bool
+    var color: Color
+}
+

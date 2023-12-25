@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Home()
+        ZStack {
+            ClockView()
+            ArcView(viewModel: ArcViewModel())
+            ArcView(viewModel: ArcViewModel(arc: ArcModel(startAngle: 90, endAngle: 180, startRange: 0.25, endRange: 0.5, isActive: false, color: .red)))
+        }
     }
 }
 
