@@ -1,5 +1,5 @@
 //
-//  Dragger.swift
+//  ArcHandlerView.swift
 //  whataday
 //
 //  Created by Jared Drueco on 2023-12-23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Dragger: View {
+struct ArcHandlerView: View {
     @State var isStart: Bool
     @Binding var angle: Double
     var body: some View {
@@ -45,9 +45,9 @@ struct Line:Shape{
 #Preview {
     VStack {
         Spacer()
-        Dragger(isStart: true, angle: .constant(90))
+        ArcHandlerView(isStart: true, angle: .constant(90))
         Spacer()
-        Dragger(isStart: false, angle: .constant(90))
+        ArcHandlerView(isStart: false, angle: .constant(90))
         Spacer()
     }
 }

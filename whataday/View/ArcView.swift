@@ -1,5 +1,5 @@
 //
-//  Slider.swift
+//  Arc.swift
 //  whataday
 //
 //  Created by Jared Drueco on 2023-12-23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Slider: View {
+struct ArcView: View {
     @State var startAngle: Double = 0
     @State var endAngle: Double = 45
     @State var startRange: CGFloat = 0
@@ -95,9 +95,7 @@ struct Slider: View {
 
 #Preview {
     ZStack {
-        Clock()
-        Slider()
-        Slider(startAngle: 90, endAngle: 180, startRange: 0.25, endRange: 0.5, isActive: false, color: .red)
+        ArcView(startAngle: 90, endAngle: 180, startRange: 0.25, endRange: 0.5, isActive: false, color: .red)
     }
 }
 

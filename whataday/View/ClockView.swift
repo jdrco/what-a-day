@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Clock: View {
+struct ClockView: View {
     let timeMarks = ["12PM", "6PM", "12AM", "6AM"]
 
     var body: some View {
@@ -31,7 +31,7 @@ struct Clock: View {
                     Text(timeMarks[markIdx])
                         .font(.subheadline)
                         .rotationEffect(.degrees(-Double(markIdx)/4) * 360)
-                        .foregroundColor(Color.gray)
+                        .foregroundColor(Color.black)
                     Spacer()
                 }
                 .rotationEffect(.degrees(Double(markIdx)/4) * 360)
@@ -44,5 +44,5 @@ struct Clock: View {
 }
 
 #Preview {
-    Clock()
+    ClockView()
 }
