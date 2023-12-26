@@ -23,7 +23,7 @@ class ArcViewModel: ObservableObject {
 
     func onDrag(value: DragGesture.Value, isStartHandler: Bool) {
         let vector = CGVector(dx: value.location.x, dy: value.location.y)
-        let radians = atan2(vector.dy, vector.dx)
+        let radians = atan2(vector.dy - 30, vector.dx - 30)
         var angle = radians * 180 / .pi
         if angle < 0 { angle = 360 + angle }
         

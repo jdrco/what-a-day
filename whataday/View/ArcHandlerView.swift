@@ -18,7 +18,7 @@ struct ArcHandlerView: View {
             Line()
                 .stroke(style: .init(lineWidth: 1, dash: [2.5]))
                 .foregroundStyle(.black)
-                .frame(height: 1)
+                .frame(height: 2)
             ZStack {
                 Circle()
                     .stroke(.black, lineWidth: 1)
@@ -31,9 +31,10 @@ struct ArcHandlerView: View {
             .rotationEffect(.init(degrees: -angle))
             .padding(.bottom, 2)
         }
-        .frame(width: 60, height: 2)
+        .contentShape(Rectangle())
+        .frame(width: 60, height: 60)
         .foregroundColor(.black)
-        .offset(x: diameter / 2 + 15)
+        .offset(x: diameter / 2 + (260-230)/2, y: 1)
         .rotationEffect(.init(degrees: angle))
         .gesture(
             DragGesture()

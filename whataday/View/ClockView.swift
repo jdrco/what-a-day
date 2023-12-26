@@ -20,8 +20,8 @@ struct ClockView: View {
                         .fill(tick % 4 == 0 ? Color.black : Color.gray)
                         .opacity(1)
                         .frame(
-                            width: tick % 4 == 0 ? 2 : 1,
-                            height: tick % 4 == 0 ? 7 : 3.5)
+                            width: tick % 4 == 0 ? 1.5 : 0.6,
+                            height: 6)
                     Spacer()
                 }
                 .rotationEffect(.degrees(Double(tick)/96 * 360))
